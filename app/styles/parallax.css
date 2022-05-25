@@ -23,13 +23,10 @@
 }
 
 @media all and (max-width: 1024px){
+  .parallax-banner {
+    height: 123vh;
+  }
   .parallax-banner-class {
     aspect-ratio: 0.8;
-  }
-}
-
-@media all and (max-width: 767px){
-  .parallax-banner-class {
-    aspect-ratio: 0.5;
   }
 }
