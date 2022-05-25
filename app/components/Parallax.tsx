@@ -18,7 +18,12 @@ const ParallaxPage = () => {
             { image: '/images/mta-landing-hero-09.png', speed: -20 },
             { image: '/images/mta-landing-hero-10.png', speed: -15 },
             { image: '/images/mta-landing-hero-11.png', speed: -10 },
-            { image: '/images/mta-landing-hero-12.png', speed: -5 },
+            {
+              image: '/images/mta-landing-hero-12.png',
+              speed: -1,
+              rootMargin: { bottom: 0, top: 100, left: 0, right: 0 },
+              shouldAlwaysCompleteAnimation: true,
+            },
           ]}
         />
       </div>
