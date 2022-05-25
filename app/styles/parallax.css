@@ -1,0 +1,50 @@
+.parallax-banner {
+  height: 160vh;
+}
+
+.parallax-banner-class {
+  aspect-ratio: 1.4;
+}
+
+@media all and (max-width: 1440px){
+  .parallax-banner {
+    height: 140vh;
+  }
+  .parallax-banner-class {
+    aspect-ratio: 1.2;
+  }
+}
+
+
+@media all and (max-width: 1300px){
+  .parallax-banner-class {
+    aspect-ratio: 1;
+  }
+}
+
+@media all and (max-width: 1024px){
+  .parallax-banner-class {
+    aspect-ratio: 0.8;
+  }
+}
+
+@media all and (max-width: 767px){
+  .parallax-banner-class {
+    aspect-ratio: 0.6;
+  }
+}
+
+@media all and (max-width: 640px){
+  .parallax-banner-class {
+    aspect-ratio: 0.4;
+  }
+}
+
+@media all and (max-width: 400px){
+  .parallax-banner {
+    height: 160vh;
+  }
+  .parallax-banner-class {
+    aspect-ratio: 0.3;
+  }
+}

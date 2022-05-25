@@ -1,7 +1,4 @@
 body {
   margin: 0 !important;
+  background-color: #190128;
 };
-
-.parallax-banner {
-  aspect-ratio: 0.9;
-}
