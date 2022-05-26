@@ -1,32 +1,63 @@
-.parallax-banner {
-  height: 160vh;
+.bottom {
+  background-color: #190128;
+  height: 50vw;
+  margin-top: -10px;
 }
 
-.parallax-banner-class {
-  aspect-ratio: 1.4;
+.parallax {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  background-position: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 80vw;
+  height: 125vh;
 }
 
-@media all and (max-width: 1440px){
-  .parallax-banner {
-    height: 140vh;
-  }
-  .parallax-banner-class {
-    aspect-ratio: 1.2;
-  }
+.parallax-img {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 100%;
 }
 
-
-@media all and (max-width: 1300px){
-  .parallax-banner-class {
-    aspect-ratio: 1;
-  }
-}
-
-@media all and (max-width: 1024px){
-  .parallax-banner {
+@media all and (max-width: 1500px) {
+  .parallax {
     height: 123vh;
   }
-  .parallax-banner-class {
-    aspect-ratio: 0.8;
+}
+
+@media all and (max-width: 1300px) {
+  .bottom {
+    height: 65vh;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .bottom {
+    height: 70vh;
+  }
+
+  .parallax-img {
+    object-position: 46% top;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .parallax-img {
+    object-position: 60% top;
+  }
+  .parallax {
+    height: 90vh;
+  }
+}
+
+@media all and (max-width: 330px) {
+  .bottom {
+    height: 50vh;
+  }
+  .parallax {
+    height: 105vh;
   }
 }
