@@ -3,7 +3,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 const ParallaxPage = () => {
   return (
     <Parallax
-      pages={1.3}
+      pages={1.35}
       style={{ top: '0', left: '0' }}
       className="parallax-banner"
     >
