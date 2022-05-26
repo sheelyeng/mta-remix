@@ -2,7 +2,11 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 const ParallaxPage = () => {
   return (
-    <Parallax pages={1.3} style={{ top: '0', left: '0' }}>
+    <Parallax
+      pages={1.3}
+      style={{ top: '0', left: '0' }}
+      className="parallax-banner"
+    >
       <ParallaxLayer offset={0} speed={0.3} className="parallax">
         <img
           src="/images/mta-landing-hero-01.png"

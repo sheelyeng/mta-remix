@@ -1,3 +1,7 @@
+.parallax-banner{
+  -webkit-overflow-scrolling: touch !important;
+}
+
 .bottom {
   background-color: #190128;
   height: 50vw;
