@@ -1,5 +1,7 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
+import TypingWriter from './TypingWriter';
+
 const ParallaxPage = () => {
   return (
     <Parallax
@@ -95,6 +97,20 @@ const ParallaxPage = () => {
           className="parallax-img"
         />
         <div className="bottom" />
+      </ParallaxLayer>
+      <ParallaxLayer offset={0} speed={1.5} className="parallax">
+        <div>
+          <div className="logo-banner">
+            <img
+              src="/images/mta-logo-2022-web.png"
+              alt="Mormon Transhumanist Association Logo"
+              className="logo"
+            />
+          </div>
+          <div className="typing-text">
+            <TypingWriter />
+          </div>
+        </div>
       </ParallaxLayer>
     </Parallax>
   );

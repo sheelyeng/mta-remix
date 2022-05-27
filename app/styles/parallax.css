@@ -26,6 +26,22 @@
   width: 100%;
 }
 
+.typing-text {
+  font-size: 2.25rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.logo-banner{
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+.logo{
+  width: 12rem;
+}
+
 @media all and (max-width: 1500px) {
   .parallax {
     height: 123vh;
