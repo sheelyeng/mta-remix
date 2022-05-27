@@ -27,10 +27,16 @@
 }
 
 .typing-text {
-  font-size: 2.25rem;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+}
+
+.typing-text .Typewriter__wrapper {
+  color: #86198f;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Quattrocento', serif;
 }
 
 .logo-banner{
@@ -62,6 +68,16 @@
   .parallax-img {
     object-position: 46% top;
   }
+
+  .logo-banner{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .typing-text .Typewriter__wrapper {
+    font-size: 24px;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -79,5 +95,9 @@
   }
   .parallax {
     height: 105vh;
+  }
+
+  .typing-text .Typewriter__wrapper {
+    font-size: 16px;
   }
 }
