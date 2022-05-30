@@ -8,7 +8,8 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
-import styles from '~/styles/global.css';
+import styles from './styles/app.css';
+import globalStyles from './styles/global.css';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -22,6 +23,10 @@ export const links: LinksFunction = () => {
     {
       rel: 'stylesheet',
       href: styles,
+    },
+    {
+      rel: 'stylesheet',
+      href: globalStyles,
     },
     {
       rel: 'preconnect',
