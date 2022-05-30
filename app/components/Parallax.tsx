@@ -102,7 +102,7 @@ const ParallaxPage = () => {
         <div>
           <div className="logo-banner">
             <img
-              src="/images/mta-logo-2022-web.png"
+              src="https://user-images.githubusercontent.com/6947/170809047-f4e286e1-1da2-4c62-8070-8dd40209f147.png"
               alt="Mormon Transhumanist Association Logo"
               className="logo"
             />
