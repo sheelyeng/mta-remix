@@ -30,7 +30,7 @@ export const links: LinksFunction = () => {
     {
       rel: 'preconnect',
       href: 'https://fonts.gstatic.com',
-      crossorigin: true,
+      crossOrigin: 'true',
     },
     {
       rel: 'stylesheet',
