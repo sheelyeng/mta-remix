@@ -8,6 +8,11 @@
   margin-top: -10px;
 }
 
+.context-form-bottom {
+  background-color: #190128;
+  height: 600vh;
+}
+
 .parallax {
   background-size: cover;
   position: absolute;
