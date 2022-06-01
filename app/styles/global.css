@@ -1,9 +1,3 @@
-body {
-  margin: 0 !important;
+body{
   background-color: #190128;
-};
-
-@font-face {
-  font-family: Quattrocento;
-  src: url(/fonts/Quattrocento-Bold.ttf);
 }
