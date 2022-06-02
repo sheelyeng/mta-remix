@@ -48,6 +48,18 @@
   width: 12rem;
 }
 
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.fade-in {
+  animation: fadeIn 3s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
 @media all and (max-width: 1500px) {
   .parallax {
     height: 123vh;

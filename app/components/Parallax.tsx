@@ -14,7 +14,7 @@ const ParallaxPage = () => {
       setIsEnabled(true);
       setTimeout(() => {
         ref?.current?.scrollTo(0);
-      }, 700);
+      }, 500);
     }
   }, [ref]);
 
@@ -23,7 +23,7 @@ const ParallaxPage = () => {
       enabled={isEnabled}
       pages={1.35}
       style={{ top: '0', left: '0' }}
-      className="parallax-banner"
+      className="fade-in parallax-banner"
       ref={ref}
     >
       <ParallaxLayer offset={0} speed={0.3} className="parallax">
