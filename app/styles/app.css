@@ -467,6 +467,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 .flex {
@@ -521,3 +522,5 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 >>>>>>> 36c38cd (updated minor flow)
+=======
+>>>>>>> 7b0896c (fixed bottom scroll issue)
