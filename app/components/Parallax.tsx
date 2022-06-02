@@ -9,9 +9,13 @@ const ParallaxPage = () => {
 
   useEffect(() => {
     if (ref.current) {
-      ref?.current?.scrollTo(0.04);
+      ref?.current?.scrollTo(13);
+      setTimeout(() => {
+        ref?.current?.scrollTo(0);
+      }, 2000);
     }
   }, [ref]);
+
   return (
     <Parallax
       pages={1.35}

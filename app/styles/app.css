@@ -468,6 +468,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+<<<<<<< HEAD
 .flex {
   display: flex;
 }
@@ -511,3 +512,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+=======
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+>>>>>>> 36c38cd (updated minor flow)
