@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { Link } from '@remix-run/react';
 
 const ParallaxPage = () => {
   const [width, setWidth] = useState<number | null>(null);
@@ -69,6 +70,11 @@ const ParallaxPage = () => {
       <ParallaxLayer offset={0} speed={1.55}>
         <img src="/images/mta-long-page_1.svg" alt="" />
         <div className="context-form-bottom" />
+      </ParallaxLayer>
+      <ParallaxLayer offset={0} speed={1.6} className="flex justify-end p-8">
+        <Link to="/" className="underline text-[#ffffff]">
+          Home
+        </Link>
       </ParallaxLayer>
     </Parallax>
   );

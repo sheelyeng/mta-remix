@@ -1,4 +1,5 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { Link } from '@remix-run/react';
 
 import TypingWriter from './TypingWriter';
 
@@ -100,12 +101,17 @@ const ParallaxPage = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={1.5} className="parallax">
         <div>
-          <div className="logo-banner">
-            <img
-              src="/images/mta-logo-2022-web.png"
-              alt="Mormon Transhumanist Association Logo"
-              className="logo"
-            />
+          <div className="flex justify-between items-start px-8 pt-8">
+            <div>
+              <img
+                src="/images/mta-logo-2022-web.png"
+                alt="Mormon Transhumanist Association Logo"
+                className="logo"
+              />
+            </div>
+            <Link to="/content-form" className="underline text-[#86198f]">
+              Content Form
+            </Link>
           </div>
           <div className="typing-text">
             <TypingWriter />
