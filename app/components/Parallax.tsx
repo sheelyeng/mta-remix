@@ -1,14 +1,23 @@
+import { useEffect, useRef } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { Link } from '@remix-run/react';
 
 import TypingWriter from './TypingWriter';
 
 const ParallaxPage = () => {
+  const ref = useRef();
+
+  useEffect(() => {
+    if (ref.current) {
+      ref?.current?.scrollTo(0.04);
+    }
+  }, [ref]);
   return (
     <Parallax
       pages={1.35}
       style={{ top: '0', left: '0' }}
       className="parallax-banner"
+      ref={ref}
     >
       <ParallaxLayer offset={0} speed={0.3} className="parallax">
         <img
