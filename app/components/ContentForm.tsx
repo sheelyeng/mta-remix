@@ -9,8 +9,9 @@ const ParallaxPage = () => {
   if (!width) {
     return null;
   }
+  const pages = width / 220 < 5 ? width / 220 : 5;
   return (
-    <Parallax pages={width / 220} style={{ top: '0', left: '0' }}>
+    <Parallax pages={pages} style={{ top: '0', left: '0' }}>
       <ParallaxLayer offset={0} speed={0}>
         <img src="/images/mta-long-page_19.svg" alt="" />
       </ParallaxLayer>
