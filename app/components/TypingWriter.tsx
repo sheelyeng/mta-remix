@@ -5,6 +5,7 @@ const TypingWriter = () => {
     <Typewriter
       onInit={(typewriter) => {
         typewriter
+          .pauseFor(2000)
           .typeString('What will you create? ')
           .pauseFor(2000)
           .changeCursorPosition(21)

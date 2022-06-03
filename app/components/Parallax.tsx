@@ -14,7 +14,7 @@ const ParallaxPage = () => {
       setIsEnabled(true);
       setTimeout(() => {
         ref?.current?.scrollTo(0);
-      }, 500);
+      }, 1000);
     }
   }, [ref]);
 
