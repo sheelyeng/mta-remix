@@ -13,7 +13,7 @@ const ParallaxPage = () => {
       ref?.current?.scrollTo(13);
       setIsEnabled(true);
       setTimeout(() => {
-        ref?.current?.scrollTo(0);
+        ref?.current?.scrollTo({ top: 0, behavior: 'smooth' });
       }, 1000);
     }
   }, [ref]);
