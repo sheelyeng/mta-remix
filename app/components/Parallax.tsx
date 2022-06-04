@@ -1,22 +1,36 @@
 import { useEffect, useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+<<<<<<< HEAD
 import { Link } from '@remix-run/react';
+=======
+import { useSpring } from 'react-spring';
+>>>>>>> 8c9d299 (slow down scroll bottom)
 
 import TypingWriter from './TypingWriter';
 
 const ParallaxPage = () => {
   const [isEnabled, setIsEnabled] = useState(false);
+  const [height, setHeight] = useState<number | null>(1000);
   const ref = useRef();
 
   useEffect(() => {
     if (ref.current) {
       ref?.current?.scrollTo(13);
       setIsEnabled(true);
-      setTimeout(() => {
-        ref?.current?.scrollTo({ top: 0, behavior: 'smooth' });
-      }, 1000);
     }
   }, [ref]);
+
+  useEffect(() => {
+    setHeight(window.innerHeight);
+  }, []);
+
+  const { scroll } = useSpring({
+    scroll: height,
+    from: { scroll: 0 },
+    delay: 700,
+    reverse: true,
+    config: { mass: 1, tension: 280, friction: 180 },
+  });
 
   return (
     <Parallax
@@ -25,6 +39,7 @@ const ParallaxPage = () => {
       style={{ top: '0', left: '0' }}
       className="fade-in parallax-banner"
       ref={ref}
+      scrollTop={scroll}
     >
       <ParallaxLayer offset={0} speed={0.3} className="parallax">
         <img

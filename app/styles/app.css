@@ -468,6 +468,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 .flex {
@@ -524,3 +525,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 >>>>>>> 36c38cd (updated minor flow)
 =======
 >>>>>>> 7b0896c (fixed bottom scroll issue)
+=======
+
+.relative {
+  position: relative;
+}
+>>>>>>> 8c9d299 (slow down scroll bottom)
