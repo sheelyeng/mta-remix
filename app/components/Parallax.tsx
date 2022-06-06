@@ -1,10 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Link } from '@remix-run/react';
 =======
 import { useSpring } from 'react-spring';
 >>>>>>> 8c9d299 (slow down scroll bottom)
+=======
+import { config, useSpring } from 'react-spring';
+>>>>>>> f398281 (fixed scroll issue)
 
 import TypingWriter from './TypingWriter';
 
@@ -29,13 +33,13 @@ const ParallaxPage = () => {
     from: { scroll: 0 },
     delay: 1000,
     reverse: true,
-    config: { duration: 1800 },
+    config: { mass: 1, tension: 280, friction: 140 },
   });
 
   return (
     <Parallax
       enabled={isEnabled}
-      pages={1.55}
+      pages={1.6}
       style={{ top: '0', left: '0' }}
       className="fade-in parallax-banner"
       ref={ref}
