@@ -27,15 +27,15 @@ const ParallaxPage = () => {
   const { scroll } = useSpring({
     scroll: height,
     from: { scroll: 0 },
-    delay: 700,
+    delay: 1000,
     reverse: true,
-    config: { mass: 1, tension: 280, friction: 180 },
+    config: { duration: 1800 },
   });
 
   return (
     <Parallax
       enabled={isEnabled}
-      pages={1.35}
+      pages={1.55}
       style={{ top: '0', left: '0' }}
       className="fade-in parallax-banner"
       ref={ref}
