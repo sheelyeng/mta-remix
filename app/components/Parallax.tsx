@@ -39,7 +39,7 @@ const ParallaxPage = () => {
   return (
     <Parallax
       enabled={isEnabled}
-      pages={1.6}
+      pages={1.7}
       style={{ top: '0', left: '0' }}
       className="fade-in parallax-banner"
       ref={ref}

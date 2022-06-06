@@ -54,7 +54,7 @@
 }
 
 .fade-in {
-  animation: fadeIn 3s;
+  animation: fadeIn 1s;
   animation-delay: 0;
   animation-iteration-count: 1;
   animation-fill-mode: both;
