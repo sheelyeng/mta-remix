@@ -14,7 +14,6 @@ const ParallaxPage = () => {
   }
   const SPEED_CHANGER = 0.01;
   const pages = (width * 5.6) / height + 0.4;
-  console.log(pages)
   const imagesSources = [
     '/images/mta-long-page_19.svg',
     '/images/mta-long-page_18.svg',
