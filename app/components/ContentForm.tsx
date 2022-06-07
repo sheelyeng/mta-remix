@@ -10,8 +10,8 @@ const ParallaxPage = () => {
   if (!width) {
     return null;
   }
-  const SPEED_CHANGER = 0.01;
-  const pages = width / 100 < 9 ? width / 100 : 9;
+  const SPEED_CHANGER = 0.005;
+  const pages = width / 100 < 10 ? width / 100 : 10;
 
   const imagesSources = [
     '/images/mta-long-page_19.svg',
