@@ -17,6 +17,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scroll-parallax": "^3.2.0",
+    "react-spring": "^9.4.5",
     "typewriter-effect": "git+https://github.com/KilianB/typewriterjs.git#cursorPosition"
   },
   "devDependencies": {

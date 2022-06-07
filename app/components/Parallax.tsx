@@ -1,14 +1,42 @@
+import { useEffect, useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { Link } from '@remix-run/react';
+import { useSpring } from 'react-spring';
 
 import TypingWriter from './TypingWriter';
 
 const ParallaxPage = () => {
+  const [isEnabled, setIsEnabled] = useState(false);
+  const [height, setHeight] = useState<number | null>(1000);
+  const ref = useRef();
+
+  useEffect(() => {
+    if (ref.current) {
+      ref?.current?.scrollTo(13);
+      setIsEnabled(true);
+    }
+  }, [ref]);
+
+  useEffect(() => {
+    setHeight(window.innerHeight);
+  }, []);
+
+  const { scroll } = useSpring({
+    scroll: height,
+    from: { scroll: 0 },
+    delay: 1000,
+    reverse: true,
+    config: { mass: 1, tension: 280, friction: 140 },
+  });
+
   return (
     <Parallax
-      pages={1.35}
+      enabled={isEnabled}
+      pages={1.7}
       style={{ top: '0', left: '0' }}
-      className="parallax-banner"
+      className="fade-in parallax-banner"
+      ref={ref}
+      scrollTop={scroll}
     >
       <ParallaxLayer offset={0} speed={0.3} className="parallax">
         <img
@@ -16,6 +44,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={0.4} className="parallax">
@@ -24,6 +53,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.5} className="parallax">
         <img
@@ -31,6 +61,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={0.6} className="parallax">
@@ -46,6 +77,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={0.8} className="parallax">
@@ -54,6 +86,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.9} className="parallax">
         <img
@@ -61,6 +94,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={1} className="parallax">
@@ -69,6 +103,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={1.1} className="parallax">
         <img
@@ -76,6 +111,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={1.2} className="parallax">
         <img
@@ -83,6 +119,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={1.3} className="parallax">
         <img
@@ -90,6 +127,7 @@ const ParallaxPage = () => {
           alt=""
           className="parallax-img"
         />
+        <div className="bottom" />
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={1.4} className="parallax">
         <img
