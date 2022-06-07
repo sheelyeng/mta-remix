@@ -1,14 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { Link } from '@remix-run/react';
-=======
 import { useSpring } from 'react-spring';
->>>>>>> 8c9d299 (slow down scroll bottom)
-=======
-import { config, useSpring } from 'react-spring';
->>>>>>> f398281 (fixed scroll issue)
 
 import TypingWriter from './TypingWriter';
 
