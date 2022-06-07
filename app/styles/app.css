@@ -476,10 +476,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: flex-start;
 }
 
-.items-center {
-  align-items: center;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -501,19 +497,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2rem;
 }
 
-.text-\[\#50d71e\] {
+.text-\[\#ffffff\] {
   --tw-text-opacity: 1;
-  color: rgb(80 215 30 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#86198f\] {
   --tw-text-opacity: 1;
   color: rgb(134 25 143 / var(--tw-text-opacity));
-}
-
-.text-\[\#ffffff\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
