@@ -5,15 +5,16 @@ import { useSpring } from 'react-spring';
 
 import TypingWriter from './TypingWriter';
 
-const ParallaxPage = () => {
+const ParallaxPage = ({loaded, setLoaded}) => {
   const [isEnabled, setIsEnabled] = useState(false);
   const [height, setHeight] = useState<number | null>(1000);
   const ref = useRef();
 
   useEffect(() => {
-    if (ref.current) {
+    if (ref.current || !loaded) {
       ref?.current?.scrollTo(13);
       setIsEnabled(true);
+      setLoaded(true);
     }
   }, [ref]);
 

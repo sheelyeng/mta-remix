@@ -13,7 +13,7 @@ const ParallaxPage = () => {
     return null;
   }
   const SPEED_CHANGER = 0.01;
-  const pages = (width * 5.6) / height + 0.4;
+  const pages = (width * 4.2) / height + 0.8;
   const imagesSources = [
     '/images/mta-long-page_19.svg',
     '/images/mta-long-page_18.svg',
@@ -38,7 +38,7 @@ const ParallaxPage = () => {
   return (
     <Parallax pages={pages} style={{ top: '0', left: '0' }}>
       {imagesSources?.map((img, index) => (
-        <ParallaxLayer key={index} offset={index * SPEED_CHANGER * 3} speed={index * SPEED_CHANGER}>
+        <ParallaxLayer key={index} offset={index * SPEED_CHANGER * 5} speed={index * SPEED_CHANGER * 3.5}>
           <img src={img} alt="" />
           <div className="context-form-bottom" />
         </ParallaxLayer>
