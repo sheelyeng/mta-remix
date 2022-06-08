@@ -8,6 +8,11 @@
   margin-top: -10px;
 }
 
+.context-form-bottom {
+  background-color: #190128;
+  height: 900vh;
+}
+
 .parallax {
   background-size: cover;
   position: absolute;
@@ -39,13 +44,20 @@
   font-family: 'Quattrocento', serif;
 }
 
-.logo-banner{
-  padding-top: 32px;
-  padding-left: 32px;
-}
-
 .logo{
   width: 12rem;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
 
 @media all and (max-width: 1500px) {
